@@ -1,6 +1,6 @@
 import requests
 
-class RSI():
+class Client():
     def __init__(self, api_key):
         session = requests.Session()
         self.session = session
