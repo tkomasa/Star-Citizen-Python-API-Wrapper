@@ -18,7 +18,7 @@ class Client(object):
             return await r.json()
     '''
     
-    
+    # returns the info on an RSI user based on their username
     def get_user(self, user: str):
         return self.loop.run_until_complete(self._get_user(user))
     
@@ -27,7 +27,7 @@ class Client(object):
             r = await session.get(url.format(self.key, "user/{}".format(user)), ssl=False)
             return await r.json()
     
-    
+    #returns info on an RSI organization based on their shorthand name
     def get_organization(self, organization: str):
         return self.loop.run_until_complete(self._get_organization(organization))
     
@@ -35,3 +35,5 @@ class Client(object):
         async with aiohttp.ClientSession() as session:
             r = await session.get(url.format(self.key, "organization/{}".format(organization)), ssl=False)
             return await r.json()
+
+
