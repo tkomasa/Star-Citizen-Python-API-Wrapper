@@ -34,7 +34,7 @@ class Client(object):
             return starcitizenapi.dictionaries.user_dict.User.from_dict(await r.json())
     
     
-    #returns info on an RSI organization based on their shorthand name
+    # returns info on an RSI organization based on their shorthand name
     '''def get_organization(self, organization: str):
         return self.loop.run_until_complete(self._get_organization(organization))
     

@@ -33,12 +33,12 @@ class User_Data(Prodict):
     affiliation: str
     organization: User_Organization
     profile: User_Profile
-    message: str
-    source: str
-    success: int
 
 class User(Prodict):
     data: User_Data
+    message: str
+    source: str
+    success: int
     
 
 # this is for testing:
