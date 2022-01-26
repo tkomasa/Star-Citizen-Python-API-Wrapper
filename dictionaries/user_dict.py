@@ -40,7 +40,9 @@ class User_Data(Prodict):
 class User(Prodict):
     data: User_Data
     
-    
+
+# this is for testing:
+'''
 response = {
     "data": {
         "affiliation": [],
@@ -82,3 +84,4 @@ response = {
 user = User_Data.from_dict(response)
 
 #print(user.data.profile.handle) #returns <Turtle-12>
+'''
