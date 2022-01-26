@@ -1,5 +1,5 @@
 # Star Citizen API Wrapper for Python
-This is an API wrapper made in Python, for Python, using the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain.
+This is a ready-to-use and async-enabled API wrapper made in Python, for Python, for the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain. It features full support for dot notation and autocomplete data as well as custom data classes for ease of use.
 
 ## What is an API wrapper?
 An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website](https://robertsspaceindustries.com/).
@@ -12,7 +12,7 @@ Here is what it looks like raw:
 Frankly, not very readable, maybe that's just me. The wrapper takes that raw stream and converts it into accessible and understandable formats for consumption and use. Instead of scanning the clump of letters for info, you can simply use the `User` object the wrapper makes to access info. Example: `user.data.profile.page.url` would now display the user's RSI page URL instead: [https://robertsspaceindustries.com/citizens/Turtle-12](https://robertsspaceindustries.com/citizens/Turtle-12). Dot notation or direct dictionary manipulation are acceptable forms of data access and maniulation. 
 
 ## What can I use this for?
-Anything you want to get information from the RSI site for. Ship data? Sure. User's profile picture? Yes sir. Full org member list? Of course. As soon as it is updated on the RSI site, it will be updated fo your application, as each parse is done to the live site. (Caching options are coming soon.) 
+Anything you want to get information from the RSI site for. Ship data? Sure. User's profile picture? Yes sir. Full organization's member list? Of course. As soon as it is updated on the RSI site, it will be updated fo your application, as each parse is done to the live site. (Caching options are coming soon.) 
 
 ## Getting Started:
 1. Step one is getting your API key [here](https://starcitizen-api.com/startup.php#getting-started).
