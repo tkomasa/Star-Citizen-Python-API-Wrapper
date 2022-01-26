@@ -54,7 +54,7 @@ Client = RSI.Client(api_key)
 
 ```python
 user = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
-RSI_page_link = user.user_data.user_profile.page.url # an example of accessing the data using dot notation
+RSI_page_link = user.data.profile.page.url # an example of accessing the data using dot notation
 ```
 ***
 # Functions of the wrapper:
