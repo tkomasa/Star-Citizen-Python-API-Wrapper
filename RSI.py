@@ -1,6 +1,5 @@
 import asyncio
 import aiohttp
-from prodict import Prodict
 url = 'https://api.starcitizen-api.com/{}/v1/live/{}'
 
 
