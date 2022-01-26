@@ -46,7 +46,7 @@ data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
 
 ## Methods:
 ***
-#### get_user(user)
+#### 1. get_user(user)
 Will return [User]() object of the queried user 
 
 ##### User Object:
@@ -103,9 +103,10 @@ User's RSI Page URL:  https://robertsspaceindustries.com/citizens/Turtle-12
 ---------------------------
 ```
 ***
-#### get_organization(organization_sid)
+#### 2. get_organization(organization_sid)
 Will return [Organization]() object of the queried organization shorthand ID
 
 ##### Organization Object:
 
 ***
+
