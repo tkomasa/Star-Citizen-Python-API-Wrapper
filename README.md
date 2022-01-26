@@ -106,7 +106,7 @@ if user.success == 1:
     bool_succ = "Success"
 elif user.success != 1:
     bool_succ = "Failure"
-print("Succes: " + bool_succ + " from " + user.source)
+print("Success: " + bool_succ + " from " + user.source)
 print("User's RSI Handle:    " + user.data.profile.display)
 print("User's Organization:  " + user.data.organization.name)
 print("User's RSI Page URL:  " + user.data.profile.page.url)
@@ -117,6 +117,7 @@ This will return the following:
 
 ```txt
 ----------Testing----------
+Success: Success from live
 User's RSI Handle:    Turtle-12
 User's Organization:  Invictus Intergalactic Federation
 User's RSI Page URL:  https://robertsspaceindustries.com/citizens/Turtle-12
