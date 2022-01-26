@@ -1,4 +1,4 @@
-from starcitizenapi import StarCitizenAPI
+from starcitizenapi import wrapper
 
 import os
 from dotenv import load_dotenv
@@ -6,7 +6,7 @@ load_dotenv()
 
 # init
 api_key = os.getenv("STARCITIZEN_API_KEY")
-Client = StarCitizenAPI.Client(api_key)
+Client = wrapper.Client(api_key)
 
 # query example
 user = Client.get_user("Turtle-12")

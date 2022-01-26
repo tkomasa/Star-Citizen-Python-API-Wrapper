@@ -5,7 +5,7 @@ url = 'https://api.starcitizen-api.com/{}/v1/live/{}'
 
 # prodict autocomplete classes
 # USER
-import dictionaries.user_dict
+import starcitizenapi.dictionaries.user_dict
 
 # wrapper
 class Client(object):
@@ -31,11 +31,7 @@ class Client(object):
     async def _get_user(self, user):
         async with aiohttp.ClientSession() as session:
             r = await session.get(url.format(self.key, "user/{}".format(user)), ssl=False)
-            # return await r.json()
-            '''p = await r.json()
-            d = dictionaries.user.User_Data.from_dict(p)
-            return d'''
-            return dictionaries.user.User.from_dict(await r.json())
+            return starcitizenapi.dictionaries.user_dict.User.from_dict(await r.json())
     
     
     #returns info on an RSI organization based on their shorthand name
