@@ -65,8 +65,8 @@ RSI_page_link = user.user_data.user_profile.page.url # an example of accessing t
 Will return [User](https://github.com/tkomasa/Star-Citizen-Python-API-Wrapper/blob/main/README.md#user-object) object of the queried user 
 
 ##### User Object:
-- User: `User`
-    - User_Data: `User_Data`
+- user: `User`
+    - data: `User_Data`
         - affiliation: `list` of the user's affiliation orgs
         - organization `User_Organization`
             - image: `str` returns profile page org image url
