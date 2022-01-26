@@ -33,6 +33,7 @@ data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
 ```
 
 ## Methods:
+***
 #### get_user(user)
 Will return [User]() object of the queried user 
 
@@ -81,15 +82,18 @@ print("---------------------------")
 ```
 
 This will return the following:
-```bash
+
+```txt
 ----------Testing----------
 User's RSI Handle:    Turtle-12
 User's Organization:  Invictus Intergalactic Federation
 User's RSI Page URL:  https://robertsspaceindustries.com/citizens/Turtle-12
 ---------------------------
 ```
-
+***
 #### get_organization(organization_sid)
 Will return [Organization]() object of the queried organization shorthand ID
 
 ##### Organization Object:
+
+***
