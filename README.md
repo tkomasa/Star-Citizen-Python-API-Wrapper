@@ -47,7 +47,7 @@ data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
 ## Methods:
 ***
 #### 1. get_user(user)
-Will return [User]() object of the queried user 
+Will return [User](https://github.com/tkomasa/Star-Citizen-Python-API-Wrapper/blob/main/README.md#user-object) object of the queried user 
 
 ##### User Object:
 - User: `User`
