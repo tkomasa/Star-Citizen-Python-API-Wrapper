@@ -1,5 +1,8 @@
+<img align="right" width="200" src=""/>
+
 # Star Citizen API Wrapper for Python
 This is a ready-to-use and async-enabled API wrapper made in Python, for Python, for the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain. It features full support for dot notation and autocomplete data as well as custom data classes for ease of use.
+
 ***
 ## What is an API wrapper?
 An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website](https://robertsspaceindustries.com/).
