@@ -1,6 +1,18 @@
 # Star Citizen API Wrapper for Python
 This is an API wrapper made in Python, for Python, using the [Star Citizen API](https://starcitizen-api.com/) made by Corentin Urbain.
 
+## What is an API wrapper?
+An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website]().
+
+Here is what it looks like raw:
+```txt
+{"data":{"affiliation":[],"organization":{"image":"https://robertsspaceindustries.com/media/uh2fvrq9575zvr/heap_infobox/INVFED-Logo.png","name":"Invictus Intergalactic Federation","rank":"Enlisted Member","sid":"INVFED","stars":1},"profile":{"badge":"Grand Admiral","badge_image":"https://media.robertsspaceindustries.com/a6kpgl3byjake/heap_thumb.png","bio":"Flippers on the HOSAS. Check out my main org INVFED!\n\nDiscord: Turtle-12#0001\n\nOrg Website: https://www.invfed.com/home\nOrg RSI Page: https://robertsspaceindustries.com/orgs/INVFED\nOrg Twitter: https://twitter.com/Official_INVFED","display":"Turtle-12","enlisted":"2021-07-30T00:00:00.000000","fluency":["English"],"handle":"Turtle-12","id":"n/a","image":"https://robertsspaceindustries.com/media/xm8k6mibbrgnqr/heap_infobox/Invfed_turtle.png","location":{"country":"United States","region":"California"},"page":{"title":"Turtle-12 | Turtle-12 - Invictus Intergalactic Federation | INVFED (Enlisted Member) - Roberts Space Industries | Follow the development of Star Citizen and Squadron 42","url":"https://robertsspaceindustries.com/citizens/Turtle-12"},"website":"https://twitter.com/invfed_turtle"}},"message":"Not Modified","source":"live","success":1}
+```
+
+Frankly, not very readable, maybe that's just me. The wrapper takes that raw stream and converts it into accessible and understandable formats for consumption and use. Instead of scanning the clump of letters for info, you can simply use the `User` object the wrapper makes to access info. Example: `user.data.profile.page.url` would now display the user's RSI page URL instead: [https://robertsspaceindustries.com/citizens/Turtle-12](https://robertsspaceindustries.com/citizens/Turtle-12). Dot notation or direct dictionary manipulation are acceptable forms of data access and maniulation. 
+
+## What can I use this for?
+Anything you want to get information from the RSI site for. Ship data? Sure. User's profile picture? Yes sir. Full org member list? Of course. As soon as it is updated on the RSI site, it will be updated fo your application, as each parse is done to the live site. (Caching options are coming soon.) 
 
 ## Getting Started:
 1. Step one is getting your API key [here](https://starcitizen-api.com/startup.php#getting-started).
