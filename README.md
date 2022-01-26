@@ -67,47 +67,26 @@ Will return [User]() object of the queried user
         - source: `str` returns the source's version (should always be 'live')
         - success: `int` returns binary boolean of query success (1=True & 0=False)
 
-
+##### Example:
 ```python
-class User_Organization(Prodict):
-    image: str
-    name: str
-    rank: str
-    sid: str
-    star: int
+# query example
+user = Client.get_user("Turtle-12")
 
-class Location(Prodict):
-    country: str
-    region: str
+# example test proof
+print("----------Testing----------")
+print("User's RSI Handle:    " + user.data.profile.display)
+print("User's Organization:  " + user.data.organization.name)
+print("User's RSI Page URL:  " + user.data.profile.page.url)
+print("---------------------------")
+```
 
-class Page(Prodict):
-    title: str
-    url: str
-
-class User_Profile(Prodict):
-    badge: str
-    badge_image: str
-    bio: str
-    display: str
-    enlisted: str
-    fluency: str
-    handle: str
-    id: str
-    image: str
-    location: Location
-    page: Page
-    website: str
-    
-class User_Data(Prodict):
-    affiliation: str
-    organization: User_Organization
-    profile: User_Profile
-    message: str
-    source: str
-    success: int
-
-class User(Prodict):
-    data: User_Data
+This will return the following:
+```bash
+----------Testing----------
+User's RSI Handle:    Turtle-12
+User's Organization:  Invictus Intergalactic Federation
+User's RSI Page URL:  https://robertsspaceindustries.com/citizens/Turtle-12
+---------------------------
 ```
 
 #### get_organization(organization_sid)
