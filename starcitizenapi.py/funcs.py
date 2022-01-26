@@ -5,7 +5,7 @@ url = 'https://api.starcitizen-api.com/{}/v1/live/{}'
 
 # prodict autocomplete classes
 # USER
-import dictionaries.user
+import dictionaries.user_dict
 
 # wrapper
 class Client(object):
