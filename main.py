@@ -1,15 +1,12 @@
-import RSI
+import RSI_Wrapper.__main__ as __main__
 
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# dict classes
-import dictionaries.user
-
 # init
 api_key = os.getenv("STARCITIZEN_API_KEY")
-Client = RSI.Client(api_key)
+Client = __main__.Client(api_key)
 
 # query example
 user = Client.get_user("Turtle-12")
