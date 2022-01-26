@@ -2,7 +2,7 @@
 This is an API wrapper made in Python, for Python, using the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain.
 
 ## What is an API wrapper?
-An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website]().
+An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website](https://robertsspaceindustries.com/).
 
 Here is what it looks like raw:
 ```txt
@@ -116,3 +116,10 @@ This a fan-made and community-based project. Tucker Komasa, the [Star Citizen AP
 _This is an unofficial Star Citizen fansite, not affiliated with the Cloud Imperium group of companies. All content on this site not authored by its host or users are property of their respective owners. All game content and materials are copyright of Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.. Star Citizen®, Squadron 42®, Roberts Space Industries®, and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC. All rights reserved._
 
 By using this project, you agree to the [terms and conditions of the Star Citizen API](https://starcitizen-api.com/terms/terms-and-conditions.php). The project is a tool based around the [Star Citizen API](https://starcitizen-api.com/index.php), any development, opinions, achievements, issues, etc. centered around the [Star Citizen API](https://starcitizen-api.com/index.php) are its own.
+
+## Links
+- [RSI Website](https://robertsspaceindustries.com/)
+- [RSI Terms of Service](https://robertsspaceindustries.com/tos)
+- [RSI Fandom FAQ](https://support.robertsspaceindustries.com/hc/en-us/articles/360006895793)
+- [Star Citizen API](https://starcitizen-api.com/index.php)
+- [Star Citizen API Terms & Conditions](https://starcitizen-api.com/terms/terms-and-conditions.php)
