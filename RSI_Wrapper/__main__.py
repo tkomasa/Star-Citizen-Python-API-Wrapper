@@ -35,7 +35,7 @@ class Client(object):
             '''p = await r.json()
             d = dictionaries.user.User_Data.from_dict(p)
             return d'''
-            return dictionaries.user.User_Data.from_dict(await r.json())
+            return dictionaries.user.User.from_dict(await r.json())
     
     
     #returns info on an RSI organization based on their shorthand name

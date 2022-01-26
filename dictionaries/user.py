@@ -29,7 +29,7 @@ class User_Profile(Prodict):
     page: Page
     website: str
     
-class User(Prodict):
+class User_Data(Prodict):
     affiliation: str
     organization: User_Organization
     profile: User_Profile
@@ -37,8 +37,8 @@ class User(Prodict):
     source: str
     success: int
 
-class User_Data(Prodict):
-    data: User
+class User(Prodict):
+    data: User_Data
     
     
 response = {
