@@ -1,18 +1,20 @@
 import RSI
 
-# dict classes
-import dictionaries.user
-
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
+# dict classes
+import dictionaries.user
+
+# init
 api_key = os.getenv("STARCITIZEN_API_KEY")
 Client = RSI.Client(api_key)
 
+# query example
 user = Client.get_user("Turtle-12")
 
-# testing proof
+# example test proof
 print("----------Testing----------")
 print("User's RSI Handle:    " + user.data.profile.display)
 print("User's Organization:  " + user.data.organization.name)
