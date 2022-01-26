@@ -65,16 +65,16 @@ RSI_page_link = user.user_data.user_profile.page.url # an example of accessing t
 Will return [User](https://github.com/tkomasa/Star-Citizen-Python-API-Wrapper/blob/main/README.md#user-object) object of the queried user 
 
 ##### User Object:
-- User: `User`
-    - User_Data: `User_Data`
+- user: `User`
+    - data: `User_Data`
         - affiliation: `list` of the user's affiliation orgs
-        - User_Organization `User_Organization`
+        - organization `User_Organization`
             - image: `str` returns profile page org image url
             - name: `str` returns full org name
             - rank: `str` returns the user's rank in the org
             - sid: `str` returns the shorthand ID of the org
             - star: `int` returns how many "star" icons the user gets due to their org rank
-        - User_Profile: `User_Profile`
+        - profile: `User_Profile`
             - badge: `str` returns title of displayed badge
             - badge_image: `str` url of badge image
             - bio: `str` returns entire shorthand bio
@@ -91,9 +91,9 @@ Will return [User](https://github.com/tkomasa/Star-Citizen-Python-API-Wrapper/bl
                 - title: `str` return full HTML page title
                 - url: `str` return user's RSI account page url
             - website: `str` url of user's listed website
-        - message: `str` returns message health
-        - source: `str` returns the source's version (should always be 'live')
-        - success: `int` returns binary boolean of query success (1=True & 0=False)
+    - message: `str` returns message health
+    - source: `str` returns the source's version (should always be 'live')
+    - success: `int` returns binary boolean of query success (1=True & 0=False)
 
 ##### Example:
 ```python
@@ -102,9 +102,9 @@ user = Client.get_user("Turtle-12")
 
 # example test proof
 print("----------Testing----------")
-print("User's RSI Handle:    " + user.user_data.user_profile.display)
-print("User's Organization:  " + user.user_data.organization.name)
-print("User's RSI Page URL:  " + user.user_data.user_profile.page.url)
+print("User's RSI Handle:    " + user.data.profile.display)
+print("User's Organization:  " + user.data.organization.name)
+print("User's RSI Page URL:  " + user.data.profile.page.url)
 print("---------------------------")
 ```
 
