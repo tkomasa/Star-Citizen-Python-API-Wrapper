@@ -1,7 +1,14 @@
 import asyncio
 import aiohttp
+from prodict import Prodict
 url = 'https://api.starcitizen-api.com/{}/v1/live/{}'
-    
+
+
+# prodict autocomplete classes
+# USER
+import dictionaries.user
+
+# wrapper
 class Client(object):
     def __init__(self, api_key):
         self.key = api_key
@@ -25,15 +32,20 @@ class Client(object):
     async def _get_user(self, user):
         async with aiohttp.ClientSession() as session:
             r = await session.get(url.format(self.key, "user/{}".format(user)), ssl=False)
-            return await r.json()
+            # return await r.json()
+            '''p = await r.json()
+            d = dictionaries.user.User_Data.from_dict(p)
+            return d'''
+            return dictionaries.user.User_Data.from_dict(await r.json())
+    
     
     #returns info on an RSI organization based on their shorthand name
-    def get_organization(self, organization: str):
+    '''def get_organization(self, organization: str):
         return self.loop.run_until_complete(self._get_organization(organization))
     
     async def _get_organization(self, organization):
         async with aiohttp.ClientSession() as session:
             r = await session.get(url.format(self.key, "organization/{}".format(organization)), ssl=False)
-            return await r.json()
+            return await r.json()'''
 
 

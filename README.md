@@ -33,5 +33,5 @@ data = Client.get_user("Turtle-12")
 ```
 
 ## Methods:
-get_user()
+#### get_user()
 
