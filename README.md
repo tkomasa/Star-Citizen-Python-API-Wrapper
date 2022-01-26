@@ -1,5 +1,5 @@
-# starcitizen.tools-API-Wrapper
-This is an API wrapper made in python, for python, using the [Star Citizen API](https://starcitizen-api.com/) made by Corentin Urbain.
+# Star Citizen API Wrapper for Python
+This is an API wrapper made in Python, for Python, using the [Star Citizen API](https://starcitizen-api.com/) made by Corentin Urbain.
 
 
 ## Getting Started:
