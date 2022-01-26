@@ -1,6 +1,6 @@
 # Star Citizen API Wrapper for Python
 This is a ready-to-use and async-enabled API wrapper made in Python, for Python, for the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain. It features full support for dot notation and autocomplete data as well as custom data classes for ease of use.
-
+***
 ## What is an API wrapper?
 An API wrapper can help streamline the process of accessing an API for a particular language, in this one's case, Python. The API it is accessing provides raw JSON data (depending on the queried URL) of information scraped from the official [RSI website](https://robertsspaceindustries.com/).
 
@@ -13,8 +13,11 @@ Frankly, not very readable, maybe that's just me. The wrapper takes that raw str
 
 ## What can I use this for?
 Anything you want to get information from the RSI site for. Ship data? Sure. User's profile picture? Yes sir. Full organization's member list? Of course. As soon as it is updated on the RSI site, it will be updated fo your application, as each parse is done to the live site. (Caching options are coming soon.) 
-
+***
 ## Getting Started:
+### Installing:
+
+### Startup Code:
 1. Step one is getting your API key [here](https://starcitizen-api.com/startup.php#getting-started).
 2. Place it into a `.env` file in the main directory containing one line: 
 
@@ -43,7 +46,9 @@ Client = RSI.Client(api_key)
 ```python
 data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
 ```
-
+***
+# Functions of the wrapper:
+***
 ## Methods:
 ***
 #### 1. get_user(user)
