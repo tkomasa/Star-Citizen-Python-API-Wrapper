@@ -1,4 +1,4 @@
-import RSI_Wrapper.__main__ as __main__
+from starcitizenapi import StarCitizenAPI
 
 import os
 from dotenv import load_dotenv
@@ -6,7 +6,7 @@ load_dotenv()
 
 # init
 api_key = os.getenv("STARCITIZEN_API_KEY")
-Client = __main__.Client(api_key)
+Client = StarCitizenAPI.Client(api_key)
 
 # query example
 user = Client.get_user("Turtle-12")
