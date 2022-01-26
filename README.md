@@ -110,4 +110,7 @@ class User(Prodict):
     data: User_Data
 ```
 
-##### Org Object:
+#### get_organization(organization_sid)
+Will return [Organization]() object of the queried organization shorthand ID
+
+##### Organization Object:
