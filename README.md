@@ -1,4 +1,4 @@
-<img align="right" width="200" src=""/>
+<img align="right" width="200" src="https://user-images.githubusercontent.com/70603965/151218771-c3efa2e7-1f79-45fa-975d-b23946a8883f.png"/>
 
 # Star Citizen API Wrapper for Python
 This is a ready-to-use and async-enabled API wrapper made in Python, for Python, for the [Star Citizen API](https://starcitizen-api.com/index.php) made by Corentin Urbain. It features full support for dot notation and autocomplete data as well as custom data classes for ease of use.
