@@ -37,35 +37,35 @@ data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
 Will return [User]() object of the queried user 
 
 ##### User Object:
-> User: `User`
-    > User_Data: `User_Data`
-        > affiliation: `list` of the user's affiliation orgs
-        > User_Organization `User_Organization`
-            > image: `str` returns profile page org image url
-            > name: `str` returns full org name
-            > rank: `str` returns the user's rank in the org
-            > sid: `str` returns the shorthand ID of the org
-            > star: `int` returns how many "star" icons the user gets due to their org rank
-        > User_Profile: `User_Profile`
-            > badge: `str` returns title of displayed badge
-            > badge_image: `str` url of badge image
-            > bio: `str` returns entire shorthand bio
-            > display: `str` returns the user's RSI display name
-            > enlisted: `str` returns str format of the date the user enlisted their RSI account
-            > fluency: `str` returns str list of fluent languages
-            > handle: `str` returns user's RSI handle name
-            > id: `str` returns user account ID if applicable
-            > image: `str` url of user's profile picture
-            > location: `Location`
-                > country: `str` returns user's country
-                > region: `str` returns user's region
-            > page: `Page`
-                > title: `str` return full HTML page title
-                > url: `str` return user's RSI account page url
-            > website: `str` url of user's listed website
-        > message: `str` returns message health
-        > source: `str` returns the source's version (should always be 'live')
-        > success: `int` returns binary boolean of query success (1=True & 0=False)
+- User: `User`
+    - User_Data: `User_Data`
+        - affiliation: `list` of the user's affiliation orgs
+        - User_Organization `User_Organization`
+            - image: `str` returns profile page org image url
+            - name: `str` returns full org name
+            - rank: `str` returns the user's rank in the org
+            - sid: `str` returns the shorthand ID of the org
+            - star: `int` returns how many "star" icons the user gets due to their org rank
+        - User_Profile: `User_Profile`
+            - badge: `str` returns title of displayed badge
+            - badge_image: `str` url of badge image
+            - bio: `str` returns entire shorthand bio
+            - display: `str` returns the user's RSI display name
+            - enlisted: `str` returns str format of the date the user enlisted their RSI account
+            - fluency: `str` returns str list of fluent languages
+            - handle: `str` returns user's RSI handle name
+            - id: `str` returns user account ID if applicable
+            - image: `str` url of user's profile picture
+            - location: `Location`
+                - country: `str` returns user's country
+                - region: `str` returns user's region
+            - page: `Page`
+                - title: `str` return full HTML page title
+                - url: `str` return user's RSI account page url
+            - website: `str` url of user's listed website
+        - message: `str` returns message health
+        - source: `str` returns the source's version (should always be 'live')
+        - success: `int` returns binary boolean of query success (1=True & 0=False)
 
 
 ```python
