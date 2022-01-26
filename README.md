@@ -44,7 +44,8 @@ Client = RSI.Client(api_key)
 5. You can now use any of the API methods by using dot notation:
 
 ```python
-data = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
+user = Client.get_user("Turtle-12") # returns User object of Turtle-12 user page
+RSI_page_link = user.user_data.user_profile.page.url # an example of accessing the data using dot notation
 ```
 ***
 # Functions of the wrapper:
@@ -92,9 +93,9 @@ user = Client.get_user("Turtle-12")
 
 # example test proof
 print("----------Testing----------")
-print("User's RSI Handle:    " + user.data.profile.display)
-print("User's Organization:  " + user.data.organization.name)
-print("User's RSI Page URL:  " + user.data.profile.page.url)
+print("User's RSI Handle:    " + user.user_data.user_profile.display)
+print("User's Organization:  " + user.user_data.organization.name)
+print("User's RSI Page URL:  " + user.user_data.user_profile.page.url)
 print("---------------------------")
 ```
 
