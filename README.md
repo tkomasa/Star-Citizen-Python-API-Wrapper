@@ -1,5 +1,7 @@
 <img align="right" width="200" src="https://user-images.githubusercontent.com/70603965/151218771-c3efa2e7-1f79-45fa-975d-b23946a8883f.png"/>
 
+# !!!WIP!!!
+
 # Star Citizen API Wrapper for Python
 ![](https://img.shields.io/github/v/release/tkomasa/Star-Citizen-Python-API-Wrapper)
 ![](https://img.shields.io/website?down_color=red&down_message=API%20Offline&up_color=green&up_message=API%20Online&url=https%3A%2F%2Fstarcitizen-api.com%2Findex.php)
